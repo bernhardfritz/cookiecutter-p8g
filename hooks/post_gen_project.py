@@ -14,7 +14,7 @@ if subprocess.call(['{{ cookiecutter.package_manager }}', 'install']):
 if initialized_git:
     try:
         subprocess.check_call(['git', 'add', '-A'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-        subprocess.check_call(['git', 'commit', '-m', '"Initialize project using cookiecutter-p8g"'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+        subprocess.check_call(['git', 'commit', '-m', 'Initialize project using cookiecutter-p8g'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
         subprocess.check_call(['git', 'branch', '-M', 'main'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
         print()
         print('Created git commit.')
