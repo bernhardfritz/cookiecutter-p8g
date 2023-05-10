@@ -40,6 +40,10 @@ Select package_manager:
 1 - npm
 2 - yarn
 Choose from 1, 2 [1]: 2
+Select language:
+1 - js
+2 - ts
+Choose from 1, 2 [1]:
 ```
 
 This will generate the "Hello rectangle" code example, install dependencies and initialize git.
