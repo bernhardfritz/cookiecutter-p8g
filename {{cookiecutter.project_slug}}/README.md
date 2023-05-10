@@ -6,16 +6,20 @@ This project was bootstrapped with [cookiecutter-p8g](https://github.com/bernhar
 
 In the project directory, you can run:
 
-### `{{ cookiecutter.package_manager }} start`
+### `{{ cookiecutter.package_manager }}{% if cookiecutter.package_manager != "yarn" %} run{% endif %} dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 The page will reload when you make changes.
 
 ### `{{ cookiecutter.package_manager }}{% if cookiecutter.package_manager != "yarn" %} run{% endif %} build`
 
-Builds the app for production to the `build` folder.
+Builds the app for production to the `dist` folder.
+
+### `{{ cookiecutter.package_manager }}{% if cookiecutter.package_manager != "yarn" %} run{% endif %} preview`
+
+Previews the production build locally.
 
 ## Learn More
 

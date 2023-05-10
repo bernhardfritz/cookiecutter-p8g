@@ -27,15 +27,21 @@ print('Success! Created {{ cookiecutter.project_name }} at {}'.format(
     os.getcwd()))
 print('Inside that directory, you can run several commands:')
 print()
-print('  {{ cookiecutter.package_manager }} start')
+print('  {{ cookiecutter.package_manager }} {}dev'.format(
+    '' if '{{ cookiecutter.package_manager }}' == 'yarn' else 'run '))
 print('    Starts the development server.')
 print()
 print('  {{ cookiecutter.package_manager }} {}build'.format(
     '' if '{{ cookiecutter.package_manager }}' == 'yarn' else 'run '))
 print('    Bundles the app into static files for production.')
 print()
+print('  {{ cookiecutter.package_manager }} {}preview'.format(
+    '' if '{{ cookiecutter.package_manager }}' == 'yarn' else 'run '))
+print('    Previews the production build locally.')
+print()
 print('We suggest that you begin by typing:')
 print('  cd {{ cookiecutter.project_slug }}')
-print('  {{ cookiecutter.package_manager }} start')
+print('  {{ cookiecutter.package_manager }} {}dev'.format(
+    '' if '{{ cookiecutter.package_manager }}' == 'yarn' else 'run '))
 print()
 print('Happy hacking!')

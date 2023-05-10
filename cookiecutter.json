@@ -1,5 +1,6 @@
 {
     "project_name": "Hello rectangle",
     "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
-    "package_manager": ["npm", "yarn"]
+    "package_manager": ["npm", "yarn", "pnpm"],
+    "language": ["js", "ts"]
 }
