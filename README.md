@@ -4,7 +4,8 @@
 
 ## Features
 
-- Choose between npm and yarn
+- Choose between npm, yarn and pnpm
+- Choose between JavaScript and TypeScript
 - Deploy to GitHub Pages workflow
 
 ## Usage
@@ -39,7 +40,8 @@ project_slug [breakout]:
 Select package_manager:
 1 - npm
 2 - yarn
-Choose from 1, 2 [1]: 2
+3 - pnpm
+Choose from 1, 2, 3 [1]: 2
 Select language:
 1 - js
 2 - ts
@@ -50,7 +52,11 @@ This will generate the "Hello rectangle" code example, install dependencies and 
 
 In order for your project to be deployed to GitHub Pages, all you need to do is to configure the `gh-pages` branch to be used as a publishing source:
 
-![Screenshot](screenshot.png)
+* Grant read and write permissions to GitHub workflows:
+![Screenshot](screenshot1.png)
+
+* Configure GitHub pages to be deployed from gh-pages branch:
+![Screenshot](screenshot2.png)
 
 ## Projects built with cookiecutter-p8g
 
